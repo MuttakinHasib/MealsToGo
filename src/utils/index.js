@@ -1,5 +1,6 @@
 export const colors = {
   white: "#fff",
+  lightGray: "#EAE8E8",
 };
 
 export const fontSize = {

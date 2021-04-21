@@ -2,6 +2,7 @@ import React from "react";
 import { SafeAreaView, StatusBar, StyleSheet, View } from "react-native";
 import { SearchBar } from "../../../components";
 import { spacing } from "../../../utils";
+import RestaurantsInfo from "../components/RestaurantInfo";
 
 const RestaurantScreen = () => {
   return (
@@ -11,7 +12,9 @@ const RestaurantScreen = () => {
           onSubmitEditing={({ nativeEvent }) => console.log(nativeEvent.text)}
         />
       </View>
-      <View style={styles.list} />
+      <View style={styles.list}>
+        <RestaurantsInfo />
+      </View>
     </SafeAreaView>
   );
 };

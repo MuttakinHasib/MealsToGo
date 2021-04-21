@@ -5,9 +5,7 @@ import { fontSize, spacing } from "../../utils";
 import tailwind from "tailwind-rn";
 const SearchBar = ({ onSubmitEditing }) => {
   return (
-    <View
-      style={tailwind("flex-row border border-2 border-gray-100 rounded-md")}
-    >
+    <View style={[tailwind("flex-row rounded-md bg-gray-50")]}>
       <View style={styles.inputContainer}>
         <View style={styles.iconContainer}>
           <Ionicons name="search-sharp" size={24} color="#555" />
@@ -40,9 +38,9 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: spacing.sm,
     paddingLeft: spacing.md * 3,
+    paddingRight: spacing.md,
   },
   input: {
-    backgroundColor: "white",
     height: spacing.xl,
     fontSize: fontSize.md,
   },
