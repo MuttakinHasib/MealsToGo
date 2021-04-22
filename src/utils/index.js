@@ -1,6 +1,14 @@
 export const colors = {
   white: "#fff",
-  lightGray: "#EAE8E8",
+  lightGray: "#eee",
+  darkBlue: "#1D2335",
+};
+
+export const font = {
+  "s-body": "SFP-regular",
+  semibold: "SFP-semibold",
+  medium: "SFP-medium",
+  bold: "SFP-bold",
 };
 
 export const fontSize = {
